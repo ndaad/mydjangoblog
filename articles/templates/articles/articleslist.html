@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+    <meta charset= "utf-8">
+    <title>articles</title>
+    <link rel="stylesheet" href="{%static 'styles.css'%}">
+    </head>
+ <body>
+
+    <h4>articles</h4>
+    <p>در این قسمت می توانید متن تشریحی خود را بنویسید</p>
+    {% for articles in articles %}
+    <h2><a href="#">{{articles.title}}</a></h2>
+    <p>{{articles.body}}</p>
+    <p>{{articles.date}}</p>
+    {% endfor %}
+</body>
+
+</html>
