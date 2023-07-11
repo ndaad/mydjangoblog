@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{%static 'styles.css'%}">
     </head>
  <body>
-
+<div class="container">
     <h4>articles</h4>
     <p>در این قسمت می توانید متن تشریحی خود را بنویسید</p>
     {% for articles in articles %}
@@ -16,6 +16,7 @@
     <p>{{articles.body}}</p>
     <p>{{articles.date}}</p>
     {% endfor %}
+</div>
 </body>
 
 </html>
